@@ -34,9 +34,17 @@ class Cars(object):
     def find(self, n):
         for car in self.cars:
             if n == car.size:
-                return car.carname
-            else:
-                return ''
+                print 'this car was found:'
+                print car.carname
+                name = raw_input('do you search for this car?(wright yes or no)')
+                if name == 'yes':
+                    return car.carname
+                elif name == 'no':
+                    continue
+                else:
+                    print 'Wright yes or no, please'
+                    return
+        return None
 
     def exist(self, carid):
         for car in self.cars:
@@ -48,4 +56,4 @@ class Cars(object):
         return not self.cars
 
     def __str__(self):
-        return '\n '.join(str(car) for car in self.cars)
+        return '\n'.join(str(car) for car in self.cars)

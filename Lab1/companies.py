@@ -41,13 +41,17 @@ class Companies(object):
         return not self.companies
 
     def find(self, m):
-        if m == '':
+        if not m:
             print 'NO COMPANY PRODUCE CAR WITH SUCH SIZE '
         else:
-            print 'Such companies produce cars with such size:'
             for company in self.companies:
                 if m == company.carname:
+                    print 'Such company produce cars with such size:'
                     print company.name
+                    break
+                else:
+                    print 'No companies with such car'
+                    break
 
     def __str__(self):
         return '\n'.join(str(company) for company in self.companies)

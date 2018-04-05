@@ -1,0 +1,53 @@
+#container {
+	width:1500;
+	margin:auto;
+	background: MistyRose;
+}
+#side{
+	float:right;
+}
+#header {
+	font-style: italic;
+	padding: 25px;
+	text-align: center;
+	font-size: 3em;
+	color: grey;
+	line-height: 1.1em;
+	letter-spacing: -0.04em;
+}
+#content {
+	padding: 10px;
+	color: black;
+	font-style: Times New Roman;
+	font-size: 1.1em;
+}
+#content1 {
+	padding: 10px;
+	color: black;
+	font-style: Times New Roman;
+	font-size: 1.4em;
+}
+#nav {
+	text-align: center;
+}
+#nav a {
+	color:black;
+	font-weight: bald;
+	font-size: 2em;
+}
+#nav a:hover, #nav a.active
+{
+	color: blue;
+}
+#content table th {
+	text-align: center;
+	letter-spacing: 0.04em;
+	font-size:1.1em;
+}
+#content table td {
+	padding:10px;
+}
+#content table {
+	width:400px;
+	margin:auto;
+}
